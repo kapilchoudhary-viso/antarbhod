@@ -67,7 +67,7 @@ const WellnessClub: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {activities.map((activity, idx) => (
-            <div key={idx} className={`bg-white border border-gray-100 border-t-2 ${activity.topBorder} p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1.5 transition-all duration-300 group`}>
+            <div key={idx} className={`bg-white border border-gray-100 border-t-2 ${activity.topBorder} p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group`}>
               <div className={`w-11 h-11 ${activity.iconBg} rounded-xl flex items-center justify-center ${activity.iconColor} mb-5 shadow-sm`}>
                 {activity.icon}
               </div>

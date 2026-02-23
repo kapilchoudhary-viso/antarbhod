@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             { text: "Defeat Self-Doubt", Icon: TrendingUp, bg: "bg-white/8 border-white/15 hover:bg-white/14" },
             { text: "Stop Comparing",    Icon: Focus,      bg: "bg-white/8 border-white/15 hover:bg-white/14" }
           ].map((item, index) => (
-            <div key={index} className={`${item.bg} backdrop-blur-md px-5 py-7 rounded-2xl border flex flex-col items-center text-center hover:-translate-y-2 hover:shadow-xl transition-all duration-500 group`}>
+            <div key={index} className={`${item.bg} backdrop-blur-md px-5 py-7 rounded-2xl border flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 group`}>
               <div className="text-white/70 mb-4 group-hover:text-white group-hover:scale-110 transition-all duration-300">
                 <item.Icon size={32} strokeWidth={1.5} />
               </div>

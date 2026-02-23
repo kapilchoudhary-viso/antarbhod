@@ -76,7 +76,7 @@ const Services: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="bg-white border border-gray-100 p-5 rounded-2xl shadow-sm w-full hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div className="bg-white border border-gray-100 p-5 rounded-2xl shadow-sm w-full hover:shadow-md transition-all duration-300">
                   <div className={`w-8 h-0.5 ${step.accentBar} mx-auto mb-3 rounded-full`}></div>
                   <h4 className="text-xl font-stylish font-bold text-brand-dark mb-2">{step.title}</h4>
                   <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
