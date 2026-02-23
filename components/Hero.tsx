@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Wind, Leaf, TrendingUp, Focus } from 'lucide-react';
 
 interface HeroProps {
   onOpenContact: () => void;
@@ -15,12 +15,6 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-brand-accent/20 border border-brand-accent/30 rounded-full px-4 py-2 mb-8">
-            <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
-            <span className="text-brand-accent text-sm font-semibold tracking-wide">VisionIAS Wellness Initiative</span>
-          </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-[1.1] tracking-tight">
             Nurturing Minds.<br />
@@ -50,13 +44,15 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
         {/* Wellness cards */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
           {[
-            { text: "Overcome Anxiety", icon: "🧘", bg: "bg-white/10 border-white/10 hover:bg-white/15" },
-            { text: "Manage Burnout",   icon: "🌱", bg: "bg-white/10 border-white/10 hover:bg-white/15" },
-            { text: "Defeat Self-Doubt",icon: "💪", bg: "bg-white/10 border-white/10 hover:bg-white/15" },
-            { text: "Stop Comparing",   icon: "🌻", bg: "bg-white/10 border-white/10 hover:bg-white/15" }
+            { text: "Overcome Anxiety",  Icon: Wind,       bg: "bg-white/10 border-white/10 hover:bg-white/15" },
+            { text: "Manage Burnout",    Icon: Leaf,       bg: "bg-white/10 border-white/10 hover:bg-white/15" },
+            { text: "Defeat Self-Doubt", Icon: TrendingUp, bg: "bg-white/10 border-white/10 hover:bg-white/15" },
+            { text: "Stop Comparing",    Icon: Focus,      bg: "bg-white/10 border-white/10 hover:bg-white/15" }
           ].map((item, index) => (
             <div key={index} className={`${item.bg} backdrop-blur-md p-6 rounded-3xl border flex flex-col items-center text-center hover:-translate-y-2 hover:shadow-xl transition-all duration-500 group relative overflow-hidden`}>
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+              <div className="text-white mb-4 group-hover:scale-110 transition-transform duration-300 opacity-80">
+                <item.Icon size={36} strokeWidth={1.5} />
+              </div>
               <span className="font-stylish font-bold text-white text-xl md:text-2xl">{item.text}</span>
             </div>
           ))}
