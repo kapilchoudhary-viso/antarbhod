@@ -4,39 +4,44 @@ import { Users, Feather, RefreshCw, BatteryCharging, Flower } from 'lucide-react
 const WellnessClub: React.FC = () => {
   const activities = [
     {
-      icon: <Users size={24} />,
-      title: "Check-In Circles",
-      desc: "A structured space to share weekly highs and lows without judgment.",
-      cardTheme: "bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-100",
-      iconColor: "text-blue-600"
+      icon: <Users size={22} />,
+      title: “Check-In Circles”,
+      desc: “A structured space to share weekly highs and lows without judgment.”,
+      topBorder: “border-t-blue-500”,
+      iconBg: “bg-blue-50”,
+      iconColor: “text-blue-600”
     },
     {
-      icon: <Feather size={24} />,
-      title: "Guided Reflection",
-      desc: "Thoughtfully designed prompts to process fear of failure and comparison.",
-      cardTheme: "bg-gradient-to-br from-violet-50 to-fuchsia-50 border-violet-100",
-      iconColor: "text-violet-600"
+      icon: <Feather size={22} />,
+      title: “Guided Reflection”,
+      desc: “Thoughtfully designed prompts to process fear of failure and comparison.”,
+      topBorder: “border-t-violet-500”,
+      iconBg: “bg-violet-50”,
+      iconColor: “text-violet-600”
     },
     {
-      icon: <Flower size={24} />,
-      title: "Mindfulness & Grounding",
-      desc: "Breathing and calming techniques for performance anxiety.",
-      cardTheme: "bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-100",
-      iconColor: "text-emerald-600"
+      icon: <Flower size={22} />,
+      title: “Mindfulness & Grounding”,
+      desc: “Breathing and calming techniques for performance anxiety.”,
+      topBorder: “border-t-emerald-500”,
+      iconBg: “bg-emerald-50”,
+      iconColor: “text-emerald-600”
     },
     {
-      icon: <RefreshCw size={24} />,
-      title: "Cognitive Reframing",
-      desc: "Learn to challenge perfectionism and “falling behind” narratives.",
-      cardTheme: "bg-gradient-to-br from-amber-50 to-orange-50 border-amber-100",
-      iconColor: "text-amber-600"
+      icon: <RefreshCw size={22} />,
+      title: “Cognitive Reframing”,
+      desc: “Learn to challenge perfectionism and “falling behind” narratives.”,
+      topBorder: “border-t-amber-500”,
+      iconBg: “bg-amber-50”,
+      iconColor: “text-amber-600”
     },
     {
-      icon: <BatteryCharging size={24} />,
-      title: "Energy & Focus Resets",
-      desc: "Practical tools to rebuild consistency and mental stamina.",
-      cardTheme: "bg-gradient-to-br from-rose-50 to-red-50 border-rose-100",
-      iconColor: "text-rose-600"
+      icon: <BatteryCharging size={22} />,
+      title: “Energy & Focus Resets”,
+      desc: “Practical tools to rebuild consistency and mental stamina.”,
+      topBorder: “border-t-rose-500”,
+      iconBg: “bg-rose-50”,
+      iconColor: “text-rose-600”
     }
   ];
 
@@ -62,14 +67,12 @@ const WellnessClub: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {activities.map((activity, idx) => (
-            <div key={idx} className={`${activity.cardTheme} border p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden`}>
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-
-              <div className={`w-12 h-12 bg-white rounded-xl flex items-center justify-center ${activity.iconColor} mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm relative z-10 ring-1 ring-black/5`}>
+            <div key={idx} className={`bg-white border border-gray-100 border-t-2 ${activity.topBorder} p-6 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1.5 transition-all duration-300 group`}>
+              <div className={`w-11 h-11 ${activity.iconBg} rounded-xl flex items-center justify-center ${activity.iconColor} mb-5 shadow-sm`}>
                 {activity.icon}
               </div>
-              <h3 className="text-xl font-stylish font-bold mb-2 text-brand-dark relative z-10">{activity.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed relative z-10">{activity.desc}</p>
+              <h3 className="text-2xl font-stylish font-bold mb-2 text-brand-dark">{activity.title}</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">{activity.desc}</p>
             </div>
           ))}
 

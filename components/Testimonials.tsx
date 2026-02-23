@@ -15,32 +15,31 @@ const Testimonials: React.FC = () => {
               {
                   text: "The Student Wellness Club helped me realise that my anxiety and self-doubt weren't personal failures — they were part of the process.",
                   author: "Community Member",
-                  gradient: "from-blue-50 to-indigo-50/50",
-                  quoteColor: "bg-blue-100 text-brand-primary",
+                  accentColor: "text-brand-primary",
+                  accentBar: "bg-brand-primary",
                   avatarColor: "bg-brand-primary"
               },
               {
                   text: "I used to feel trapped by endless material and setbacks. Sharing in the club helped me reset without guilt. I'm approaching my goals smarter now.",
                   author: "Community Member",
-                  gradient: "from-amber-50 to-orange-50/50",
-                  quoteColor: "bg-amber-100 text-brand-accent",
+                  accentColor: "text-brand-accent",
+                  accentBar: "bg-brand-accent",
                   avatarColor: "bg-brand-accent"
               }
           ].map((testimonial, idx) => (
-            <div key={idx} className={`bg-gradient-to-br ${testimonial.gradient} border border-gray-100 p-10 rounded-3xl relative hover:shadow-xl transition-all duration-300 group`}>
-                <div className={`w-11 h-11 ${testimonial.quoteColor} flex items-center justify-center rounded-full shadow-sm mb-6 group-hover:scale-110 transition-transform`}>
-                    <Quote size={18} />
-                </div>
-                <p className="text-slate-700 text-lg font-serif italic mb-8 leading-relaxed">
+            <div key={idx} className="bg-white border border-gray-100 p-10 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 group relative">
+                <div className={`w-1 h-12 ${testimonial.accentBar} rounded-full absolute left-0 top-10`}></div>
+                <Quote size={32} className={`${testimonial.accentColor} opacity-20 mb-6`} />
+                <p className="text-slate-700 text-xl font-stylish italic mb-8 leading-relaxed">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
-                <div className="flex items-center gap-4 border-t border-gray-200/50 pt-6">
-                    <div className={`w-11 h-11 ${testimonial.avatarColor} rounded-full flex items-center justify-center text-white font-bold text-base shadow-sm`}>
+                <div className="flex items-center gap-4 border-t border-gray-100 pt-6">
+                    <div className={`w-10 h-10 ${testimonial.avatarColor} rounded-full flex items-center justify-center text-white font-bold text-sm shadow-sm`}>
                         V
                     </div>
                     <div>
-                        <p className="font-bold text-gray-900">{testimonial.author}</p>
-                        <p className="text-sm text-brand-primary font-medium tracking-wide uppercase">Student Wellness Club</p>
+                        <p className="font-semibold text-gray-900">{testimonial.author}</p>
+                        <p className={`text-xs ${testimonial.accentColor} font-medium tracking-widest uppercase mt-0.5`}>Student Wellness Club</p>
                     </div>
                 </div>
             </div>
