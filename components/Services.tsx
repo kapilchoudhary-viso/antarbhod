@@ -11,7 +11,7 @@ const Services: React.FC = () => {
           {/* Decorative Background */}
           <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:20px_20px]"></div>
 
-          <div className="text-center mb-16 relative z-10">
+          <div className="text-center mb-10 relative z-10">
             <span className="text-brand-accent font-script text-3xl block mb-2">Process</span>
             <h3 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark mb-6">Your Wellness Journey</h3>
             <p className="text-xl text-slate-700 max-w-3xl mx-auto font-normal leading-relaxed">

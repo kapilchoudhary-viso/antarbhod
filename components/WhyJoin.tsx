@@ -31,8 +31,11 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
 
   return (
     <section className="py-14 md:py-20 bg-brand-light relative">
+      {/* Smooth section transitions */}
+      <div className="absolute top-0 left-0 right-0 h-14 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-20">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           
           <div className="lg:w-1/2">
             <h2 className="text-4xl md:text-6xl font-serif font-bold text-gray-900 mb-10 leading-tight">

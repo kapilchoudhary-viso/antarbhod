@@ -47,6 +47,9 @@ const WellnessClub: React.FC = () => {
 
   return (
     <section id="wellness-club" className="py-14 md:py-20 bg-slate-50 relative overflow-hidden scroll-mt-20">
+      {/* Smooth section transitions */}
+      <div className="absolute top-0 left-0 right-0 h-14 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none z-10"></div>
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/50 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/3"></div>
