@@ -30,7 +30,7 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-brand-light relative">
+    <section className="py-14 md:py-20 bg-brand-light relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row items-center gap-20">
           

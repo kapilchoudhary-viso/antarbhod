@@ -3,9 +3,9 @@ import { Quote } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-14 md:py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark">Voices of Resilience</h2>
           <div className="w-16 h-1 bg-brand-accent mx-auto mt-5 rounded-full"></div>
         </div>

@@ -3,7 +3,7 @@ import { Lightbulb, Target, Waves, TrendingUp, MessageCircle, UserCheck, Lock } 
 
 const WellnessMatters: React.FC = () => {
   return (
-    <section id="wellness-matters" className="py-20 md:py-32 bg-slate-50 relative scroll-mt-20">
+    <section id="wellness-matters" className="py-14 md:py-20 bg-slate-50 relative scroll-mt-20">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 

@@ -3,7 +3,7 @@ import { Brain, UserCheck, Calendar, ClipboardList } from 'lucide-react';
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-20 md:py-32 bg-white scroll-mt-20">
+    <section id="services" className="py-14 md:py-20 bg-white scroll-mt-20">
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Journey Section */}
