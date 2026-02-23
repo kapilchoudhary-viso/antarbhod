@@ -38,14 +38,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
         {/* Wellness cards */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
           {[
-            { text: "Overcome Anxiety",  Icon: Wind,       bg: "bg-white/8 border-white/15 hover:bg-white/14" },
-            { text: "Manage Burnout",    Icon: Leaf,       bg: "bg-white/8 border-white/15 hover:bg-white/14" },
-            { text: "Defeat Self-Doubt", Icon: TrendingUp, bg: "bg-white/8 border-white/15 hover:bg-white/14" },
-            { text: "Stop Comparing",    Icon: Focus,      bg: "bg-white/8 border-white/15 hover:bg-white/14" }
+            { text: "Overcome Anxiety",  Icon: Wind,       iconColor: "text-sky-400",    iconBg: "bg-sky-400/15",    border: "hover:border-sky-400/40" },
+            { text: "Manage Burnout",    Icon: Leaf,       iconColor: "text-emerald-400", iconBg: "bg-emerald-400/15", border: "hover:border-emerald-400/40" },
+            { text: "Defeat Self-Doubt", Icon: TrendingUp, iconColor: "text-amber-400",  iconBg: "bg-amber-400/15",  border: "hover:border-amber-400/40" },
+            { text: "Stop Comparing",    Icon: Focus,      iconColor: "text-violet-400", iconBg: "bg-violet-400/15", border: "hover:border-violet-400/40" }
           ].map((item, index) => (
-            <div key={index} className={`${item.bg} backdrop-blur-md px-5 py-7 rounded-2xl border flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 group`}>
-              <div className="text-white/70 mb-4 group-hover:text-white group-hover:scale-110 transition-all duration-300">
-                <item.Icon size={32} strokeWidth={1.5} />
+            <div key={index} className={`bg-white/8 border border-white/15 ${item.border} backdrop-blur-md px-5 py-7 rounded-2xl flex flex-col items-center text-center hover:bg-white/12 hover:shadow-lg transition-all duration-500 group`}>
+              <div className={`${item.iconBg} w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500`}>
+                <item.Icon size={28} strokeWidth={1.5} className={item.iconColor} />
               </div>
               <span className="font-stylish font-semibold text-white text-xl md:text-2xl leading-snug">{item.text}</span>
             </div>
