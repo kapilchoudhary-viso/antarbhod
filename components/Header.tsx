@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, HeartHandshake, ArrowRight } from 'lucide-react';
+import { Menu, X, HeartHandshake } from 'lucide-react';
 
 interface HeaderProps {
   onOpenContact: () => void;
@@ -78,17 +78,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenContact }) => {
           })}
         </nav>
 
-        {/* CTA */}
-        <div className="px-5 pb-8">
-          <div className="h-px bg-gray-100 mb-5"></div>
-          <button
-            onClick={onOpenContact}
-            className="w-full py-3 px-4 bg-brand-primary text-white text-sm font-semibold rounded-xl hover:bg-brand-secondary transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer shadow-sm"
-          >
-            Book a Session
-            <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
-          </button>
-        </div>
+        <div className="pb-6"></div>
       </aside>
 
       {/* ── Mobile Top Bar ── */}
