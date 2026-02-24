@@ -7,7 +7,7 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 scroll-reveal">
 
         {/* Journey Section */}
-        <div className="bg-gradient-to-b from-slate-50 to-white rounded-[3rem] p-8 md:p-16 shadow-soft border border-gray-100 relative overflow-hidden">
+        <div className="bg-gradient-to-b from-slate-50 to-white rounded-[3rem] p-6 md:p-10 shadow-soft border border-gray-100 relative overflow-hidden">
           {/* Decorative Background */}
           <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:20px_20px]"></div>
 
