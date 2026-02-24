@@ -22,7 +22,7 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header onOpenContact={openContact} />
-      <main className="flex-grow pt-16 md:ml-[210px]">
+      <main className="flex-grow pt-16">
         <Hero onOpenContact={openContact} />
         <AboutVisionCare />
         <WellnessMatters />
