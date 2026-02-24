@@ -7,7 +7,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
   return (
-    <section className="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden bg-brand-dark">
+    <section className="relative pt-36 pb-12 md:pt-44 md:pb-20 overflow-hidden bg-brand-dark">
       {/* Abstract Background Elements */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-b from-brand-primary/20 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-70"></div>
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-t from-brand-accent/10 to-transparent rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 opacity-60"></div>

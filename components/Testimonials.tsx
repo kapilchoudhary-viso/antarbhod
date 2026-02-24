@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-14 md:py-20 bg-white">
+    <section className="py-10 md:py-14 bg-white">
       <div className="container mx-auto px-4 md:px-6 scroll-reveal">
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark">Voices of Resilience</h2>
@@ -46,7 +46,7 @@ const Testimonials: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-20">
+        <div className="text-center mt-10">
           <p className="text-2xl font-serif italic text-slate-600">
             When the mind feels supported, preparation becomes <span className="text-brand-primary not-italic font-bold">sustainable.</span>
           </p>

@@ -3,7 +3,7 @@ import { Lightbulb, Target, Waves, TrendingUp, MessageCircle, UserCheck, Lock } 
 
 const WellnessMatters: React.FC = () => {
   return (
-    <section id="wellness-matters" className="py-14 md:py-20 bg-slate-50 relative scroll-mt-20">
+    <section id="wellness-matters" className="py-10 md:py-14 bg-slate-50 relative scroll-mt-20">
       {/* Smooth section transitions */}
       <div className="absolute top-0 left-0 right-0 h-14 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
@@ -15,7 +15,7 @@ const WellnessMatters: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-dark mb-8">
               Why Mental Wellness <span className="text-brand-primary italic">Matters</span>
             </h2>
-            <p className="text-xl text-slate-700 mb-10 leading-relaxed font-normal">
+            <p className="text-xl text-slate-700 mb-6 leading-relaxed font-normal">
               A calm, steady mind is the engine of sustained preparation. At VisionCare, we recognise that success in any ambitious pursuit is not built by knowledge alone — it is built by mental clarity and emotional stability.
             </p>
 
@@ -41,7 +41,7 @@ const WellnessMatters: React.FC = () => {
               <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-br from-brand-primary/5 via-brand-secondary/5 to-transparent rounded-full blur-3xl -translate-y-1/4 translate-x-1/4 pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-to-tr from-amber-50/50 to-transparent rounded-full blur-3xl translate-y-1/4 -translate-x-1/4 pointer-events-none"></div>
 
-              <h3 className="text-3xl font-serif font-bold text-brand-dark mb-10 relative z-10">Our Core Support System</h3>
+              <h3 className="text-3xl font-serif font-bold text-brand-dark mb-6 relative z-10">Our Core Support System</h3>
               <div className="space-y-3 relative z-10">
                 {[
                   {

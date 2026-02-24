@@ -46,7 +46,7 @@ const WellnessClub: React.FC = () => {
   ];
 
   return (
-    <section id="wellness-club" className="py-14 md:py-20 bg-slate-50 relative overflow-hidden scroll-mt-20">
+    <section id="wellness-club" className="py-10 md:py-14 bg-slate-50 relative overflow-hidden scroll-mt-20">
       {/* Smooth section transitions */}
       <div className="absolute top-0 left-0 right-0 h-14 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none z-10"></div>
@@ -59,11 +59,11 @@ const WellnessClub: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10 scroll-reveal">
         <div className="text-center mb-10">
           <span className="text-brand-accent font-bold tracking-widest uppercase text-xs mb-3 block">VisionCare Community</span>
-          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 text-brand-dark">Student Wellness Club</h2>
-          <p className="text-2xl font-script text-brand-accent mb-6 transform -rotate-1">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-4 text-brand-dark">Student Wellness Club</h2>
+          <p className="text-2xl font-script text-brand-accent mb-3 transform -rotate-1">
             "Strength in Community"
           </p>
-          <p className="mt-6 text-slate-700 max-w-3xl mx-auto text-lg font-light leading-relaxed">
+          <p className="mt-3 text-slate-700 max-w-3xl mx-auto text-lg font-light leading-relaxed">
             The Student Wellness Club is a weekly, guided group experience where individuals come together to reflect, share, and build resilience. Because sometimes the most powerful breakthrough comes from realising: <span className="text-brand-primary font-semibold border-b border-brand-accent/50 pb-0.5">"I'm not alone in this."</span>
           </p>
         </div>

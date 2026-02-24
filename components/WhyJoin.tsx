@@ -30,7 +30,7 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
   ];
 
   return (
-    <section className="py-14 md:py-20 bg-brand-light relative">
+    <section className="py-10 md:py-14 bg-brand-light relative">
       {/* Smooth section transitions */}
       <div className="absolute top-0 left-0 right-0 h-14 bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
@@ -38,7 +38,7 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           
           <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-6xl font-serif font-bold text-gray-900 mb-10 leading-tight">
+            <h2 className="text-4xl md:text-6xl font-serif font-bold text-gray-900 mb-6 leading-tight">
               Why Join the <br/><span className="text-brand-accent font-script text-6xl md:text-7xl">Club?</span>
             </h2>
             
@@ -65,11 +65,11 @@ const WhyJoin: React.FC<WhyJoinProps> = ({ onOpenContact }) => {
                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
 
                <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 relative z-10">Take the First Step</h3>
-               <p className="text-slate-200 mb-10 text-lg leading-relaxed relative z-10 font-normal">
+               <p className="text-slate-200 mb-6 text-lg leading-relaxed relative z-10 font-normal">
                  Your mental well-being is as important as your hard work and strategy. Strong performance begins with a steady mind.
                </p>
 
-               <div className="bg-white/20 border border-white/30 rounded-2xl p-5 mb-10 inline-block backdrop-blur-md relative z-10 shadow-lg">
+               <div className="bg-white/20 border border-white/30 rounded-2xl p-5 mb-6 inline-block backdrop-blur-md relative z-10 shadow-lg">
                  <p className="text-amber-300 font-bold text-sm flex items-center gap-2 justify-center tracking-wide">
                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse shadow-[0_0_8px_rgba(251,191,36,0.8)]"></span>
                    Limited seats to ensure meaningful participation.

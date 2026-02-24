@@ -3,7 +3,7 @@ import { Compass, Heart, Sparkles } from 'lucide-react';
 
 const AboutVisionCare: React.FC = () => {
   return (
-    <section id="about" className="py-14 md:py-20 bg-white relative overflow-hidden scroll-mt-20">
+    <section id="about" className="py-10 md:py-14 bg-white relative overflow-hidden scroll-mt-20">
       <div className="container mx-auto px-4 md:px-6 relative z-10 scroll-reveal">
         <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-24">
           
